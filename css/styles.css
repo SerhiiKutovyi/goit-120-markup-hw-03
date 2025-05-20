@@ -7,6 +7,8 @@ body {
 
 ul,
 ol {
+  margin: 0;
+  padding: 0;
   list-style-type: none;
 }
 
@@ -14,7 +16,27 @@ a {
   text-decoration: none;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0px;
+}
+
+p {
+  margin: 0;
+}
+
 /*?============================================   MODS   ===  */
+
+.container {
+  width: 1440px;
+  padding-left: 156px;
+  padding-right: 156px;
+  margin: 0 auto;
+}
 
 .section-title {
   font-size: 36px;
@@ -43,6 +65,15 @@ a {
 }
 
 /**==========================================   Header   === */
+
+.header {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-nav {
+}
+
 .logo {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -92,19 +123,29 @@ a {
 
 .hero {
   background-color: #2e2f42;
+  padding: 188px 0;
 }
 
 .hero-title {
+  margin-right: auto;
+  margin-bottom: 48px;
+  margin-left: auto;
+
+  max-width: 496px;
+
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
-
-  text-align: center;
 
   color: #fff;
 }
 
 .hero-button {
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -127,7 +168,7 @@ a {
 
 } */
 
-/**================================    Section Team   =====================*/
+/**================================    Section Team   ===*/
 
 .team {
   background: #f4f4fd;
