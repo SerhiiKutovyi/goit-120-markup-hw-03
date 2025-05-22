@@ -80,6 +80,19 @@ p {
   color: #4d5ae5;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /**==========================================   Header   === */
 
 .header {
@@ -204,11 +217,17 @@ p {
 
 /** ===============================   Section Operating principles   ===*/
 
-.operating-title {
-}
-
 .operating-list {
   display: flex;
+  gap: 24px;
+}
+
+.operating-subtitle {
+  margin-bottom: 8px;
+}
+
+.operating-item {
+  width: calc((100% - 24px * 3) / 4);
 }
 
 /**================================    Section Team   ===*/
@@ -223,14 +242,24 @@ p {
 
 .team-list {
   display: flex;
+  gap: 24px;
 }
 
 .team-item {
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+
   background-color: #fff;
+}
+
+.team-item-box {
+  padding: 32px 16px;
 }
 
 .team-subtitle {
   text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-text {
@@ -252,6 +281,18 @@ p {
 
 .portfolio-item {
   background-color: #fff;
+}
+
+.portfolio-subtitle {
+  margin-bottom: 8px;
+}
+
+.portfolio-item-box {
+  padding: 32px 16px;
+
+  border-bottom: 1px solid #e7e9fc;
+  border-left: 1px solid #e7e9fc;
+  border-right: 1px solid #e7e9fc;
 }
 
 /**====================================   footer   ===*/
